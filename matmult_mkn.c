@@ -1,5 +1,5 @@
 void
-matmul_mkn(int m, int n, int k, double **A, double **B, double **C) {
+matmult_mkn(int m, int n, int k, double **A, double **B, double **C) {
     
     int i, j, l;
 
