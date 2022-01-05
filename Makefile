@@ -6,7 +6,7 @@ LIBOBJS	= matmult_lib.o matmult_nat.o \
           matmult_nkm.o matmult_nmk.o \
           matmult_blk.o
 
-OPT	= -g -O3 -std=gnu99 
+OPT	= -g
 PIC	= -fPIC
 
 CC	= gcc
