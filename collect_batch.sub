@@ -24,6 +24,9 @@ module load studio
 # fix the permission issues
 chmod +x ./matmult_c.gcc
 
+# output cpu info
+lscpu
+
 # define the driver name to use
 # valid values: matmult_c.studio, matmult_f.studio, matmult_c.gcc or
 # matmult_f.gcc
