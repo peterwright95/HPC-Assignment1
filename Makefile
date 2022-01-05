@@ -5,8 +5,10 @@ LIBOBJS	= matmult_lib.o matmult_nat.o \
           matmult_mkn.o matmult_mnk.o \
           matmult_nkm.o matmult_nmk.o \
           matmult_blk.o
-
-OPT	= -g
+# original version
+OPT	= -g 
+# optimized vesion
+# OPT	= -g -O3 -std=c99
 PIC	= -fPIC
 
 CC	= gcc
