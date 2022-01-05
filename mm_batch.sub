@@ -45,8 +45,9 @@ for P in $PERM
 do
     for S in $SIZES
     do
-        ./$EXECUTABLE $P $S $S $S $BLKSIZE
+        ./$EXECUTABLE $P $S $S $S $BLKSIZE >> DAT_FILES/$P.dat
     done
 done
+
 
 
