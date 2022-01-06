@@ -1,0 +1,14 @@
+Current metrics: i.totalcpu:name
+Current Sort Metric: Inclusive Total CPU Time ( i.totalcpu )
+Functions sorted by metric: Inclusive Total CPU Time
+
+Incl.      Name
+Total
+CPU sec.
+1.491      <Total>
+1.491      __libc_start_main
+1.491      main
+1.491      matmult_knm
+1.491      mflops
+0.010      __GI_memset
+

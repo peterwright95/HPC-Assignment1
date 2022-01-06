@@ -1,0 +1,34 @@
+Current metrics: i.totalcpu:name
+Current Sort Metric: Inclusive Total CPU Time ( i.totalcpu )
+Functions sorted by metric: Inclusive Total CPU Time
+
+Incl.      Name
+Total
+CPU sec.
+0.290      <Total>
+0.290      ATL_dgemm
+0.290      ATL_dmmJIK
+0.290      ATL_dmmJIK2
+0.290      __libc_start_main
+0.290      cblas_dgemm
+0.290      main
+0.290      matmult_lib
+0.290      mflops
+0.150      <static>@0x58a7ad (<libsatlas.so.3.10>)
+0.080      ATL_dpKBmm
+0.060      ATL_dgpKBmm
+0.050      ATL_dMBJBmm
+0.040      ATL_dIBNBmm
+0.040      ATL_dJIK0x0x20TN20x20x0_a1_bX
+0.020      <static>@0x5b4168 (<libsatlas.so.3.10>)
+0.020      <static>@0x5c4a2b (<libsatlas.so.3.10>)
+0.020      <static>@0x5d82d1 (<libsatlas.so.3.10>)
+0.020      ATL_dIBJBmm
+0.020      ATL_dJIK0x0x40TN40x40x0_a1_bX
+0.020      ATL_dpKBmm_b1
+0.020      ATL_dpMBmm_b0
+0.020      ATL_dpNBmm_b1
+0.010      <static>@0x5c35f0 (<libsatlas.so.3.10>)
+0.010      ATL_dcol2blk_a1
+0.010      ATL_dpNBmm_b0
+

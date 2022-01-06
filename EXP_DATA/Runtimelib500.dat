@@ -1,0 +1,41 @@
+Current metrics: i.totalcpu:name
+Current Sort Metric: Inclusive Total CPU Time ( i.totalcpu )
+Functions sorted by metric: Inclusive Total CPU Time
+
+Incl.      Name
+Total
+CPU sec.
+30.181     <Total>
+30.181     __libc_start_main
+30.181     main
+30.171     ATL_dgemm
+30.171     ATL_dmmJIK
+30.171     cblas_dgemm
+30.151     mflops
+30.141     matmult_lib
+29.851     ATL_dmmJIK2
+25.938     <static>@0x58a7ad (<libsatlas.so.3.10>)
+ 1.511     ATL_dpKBmm
+ 1.211     <static>@0x5d82d1 (<libsatlas.so.3.10>)
+ 1.211     ATL_dpKBmm_b1
+ 1.191     ATL_dMBJBmm
+ 1.051     <static>@0x5c4a2b (<libsatlas.so.3.10>)
+ 1.051     ATL_dpNBmm_b1
+ 0.991     ATL_dIBNBmm
+ 0.811     <static>@0x5b9204 (<libsatlas.so.3.10>)
+ 0.811     ATL_dpMBmm_b1
+ 0.410     ATL_dcol2blk_a1
+ 0.320     <static>@0x62dbda (<libsatlas.so.3.10>)
+ 0.320     ATL_drow2blkT2_a1
+ 0.280     ATL_dgpKBmm
+ 0.220     ATL_dJIK0x0x20TN20x20x0_a1_bX
+ 0.060     <static>@0x5c35f0 (<libsatlas.so.3.10>)
+ 0.060     ATL_dIBJBmm
+ 0.060     ATL_dJIK0x0x40TN40x40x0_a1_bX
+ 0.060     ATL_dpNBmm_b0
+ 0.040     <static>@0x5b4168 (<libsatlas.so.3.10>)
+ 0.040     ATL_dpMBmm_b0
+ 0.030     matmult_ref
+ 0.010     getrusage
+ 0.010     xtime
+
