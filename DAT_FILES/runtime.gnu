@@ -13,3 +13,5 @@ plot "< awk '{print $1, $2}' knm.dat" with linespoints title "knm",\
     "< awk '{print $1, $2}' nmk.dat" with linespoints title "nmk",\
     "< awk '{print $1, $2}' mnk.dat" with linespoints title "mnk",\
     "< awk '{print $1, $2}' mkn.dat" with linespoints title "mkn",\
+    "< awk '{print $1, $2}' lib.dat" with linespoints title "lib",\
+    "< awk '{print $1, $2}' blk.dat" with linespoints title "blk",\
