@@ -6,16 +6,16 @@ LIBOBJS	= matmult_lib.o matmult_nat.o \
           matmult_nkm.o matmult_nmk.o \
           matmult_blk.o
 # original version
-OPT	= -g 
+#OPT	= -g 
 # optimized vesion
-# OPT	= -g -O3 -std=c99
+OPT	= -g -O3
 PIC	= -fPIC
 
 CC	= gcc
 CFLAGS= $(OPT) $(PIC) $(XOPTS)
 
 SOFLAGS = -shared 
-XLIBS	= -L/usr/lib64/atlas -lsatlas
+XLIBS	= -L/usr/lib64/atlas -lsatlas -lm
 
 $(TARGET): $(LIBOBJS)
 	$(CC) -o $@ $(SOFLAGS) $(LIBOBJS) $(XLIBS)
