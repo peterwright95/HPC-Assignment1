@@ -16,7 +16,7 @@
 # a whole CPU for itself (shared L3 cache)
 # #BSUB -R "span[hosts=1] affinity[socket(1)]"
 # choose the server to collect
-#BSUB -R "select[model == XeonE5_2650v4]"
+#BSUB -R "select[avx2]"
 
 # needed for the collect tool
 module load studio
@@ -35,15 +35,15 @@ EXECUTABLE=matmult_c.gcc
 
 # define the mkn values in the MKN variable
 #
-MKN="1000 2000"
+MKN="200"
 
 # define the permutation type in PERM
 #
-PERM="mkn"
+PERM="blk"
 
 # uncomment and set a reasonable BLKSIZE for the blk version
 #
-# BLKSIZE=1
+BLKSIZE="1 2 4 8"
 
 # define the max no. of iterations the driver should use - adjust to
 # get a reasonable run time.  You can get an estimate by trying this
@@ -70,11 +70,11 @@ HWCOUNT="-h dch,on,dcm,on,l2h,on,l2m,on"
 # start the collect command with the above settings
 for P in $PERM
 do
-    for S in $MKN
+    for BLK in $BLKSIZE
     do
-        EXPOUT="$LSB_JOBNAME.${P}${S}.er"
-        ERROUT="Cache$P$S"
-        collect -o $EXPOUT $HWCOUNT ./$EXECUTABLE $P $S $S $S $BLKSIZE
+        EXPOUT="$LSB_JOBNAME.${P}${S}$BLK.er"
+        ERROUT="$P$Sbs$BLK"
+        collect -o $EXPOUT $HWCOUNT ./$EXECUTABLE $P $MKN $MKN $MKN $BLK
         > EXP_DATA/$ERROUT.dat
         er_print -functions $EXPOUT >> EXP_DATA/$ERROUT.dat
     done

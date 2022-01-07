@@ -1,1 +1,0 @@
-void printMatrix(double **A, int m, int n);
